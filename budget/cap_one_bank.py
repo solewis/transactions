@@ -3,7 +3,7 @@ import datetime
 from helpers import should_process_row, determine_category
 
 category_dict = {
-    'Celeste Jacroux': 'Rent',
+    'Celeste Jacroux': 'Housing',
     'Deposit from USAA': 'Steven Transfer',
     'Deposit from ALLY': 'Alicia Transfer',
     'Monthly Interest Paid': 'Interest',

@@ -3,16 +3,16 @@ import datetime
 from helpers import should_process_row, determine_category
 
 category_dict = {
-    'ALICIA C RACITI': 'Rent Reimbursement',
+    'ALICIA C RACITI': 'Housing',
     'Asynchrony AP Invoice': 'Business Misc',
     'WORLD WIDE TECH  DIRECT DEP': 'Paycheck',
     'VANGUARD BUY     INVESTMENT': 'IRA Contribution',
     'INTEREST PAID': 'Interest',
-    'To Michael J Lewis Checking': 'Cell',
+    'To Michael J Lewis Checking': 'Utilities',
     'XCEL ENERGY-PSCO XCELENERGY': 'Utilities',
-    'TenantCloud LLC': 'Rent',
+    'TenantCloud LLC': 'Housing',
     'PAYPAL           INST XFER  ***********TIME': 'Entertainment - goods',
-    'Celeste Jacroux': 'Rent',
+    'Celeste Jacroux': 'Housing',
     'IRS': 'Taxes'
 }
 
@@ -20,7 +20,9 @@ skip_set = {
     'AMEX EPAYMENT',
     'CRCARDPMT',
     'CHASE CREDIT CRD AUTOPAY',
-    'GOLDMAN SACHS BA COLLECTION'
+    'CAPITAL ONE ONLINE PMT',
+    'GOLDMAN SACHS BA COLLECTION',
+    'To Steven Lewis Savings #5146'
 }
 
 

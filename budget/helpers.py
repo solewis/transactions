@@ -9,3 +9,9 @@ def determine_category(description, category_dict):
         if key in description:
             return value
     return ''
+
+
+def toFloat(amt):
+    if amt == '':
+        return 0
+    return float(amt)

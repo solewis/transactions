@@ -1,8 +1,8 @@
-from helpers import should_process_row, determine_category
+from helpers import should_process_row, determine_category, toFloat
 
 category_dict = {
     'WHOLEFDS': 'Groceries',
-    'COMCAST CABLE COMM': 'Internet',
+    'COMCAST CABLE COMM': 'Utilities',
     'SPROUTS': 'Groceries',
     'DIVINO': 'Alcohol',
     'WASH PERK': 'Restaurants',
@@ -13,14 +13,9 @@ category_dict = {
 }
 
 skip_set = {
-    'CAPITAL ONE AUTOPAY'
+    'CAPITAL ONE AUTOPAY',
+    'CAPITAL ONE ONLINE PYMT'
 }
-
-
-def toFloat(amt):
-    if amt == '':
-        return 0
-    return float(amt)
 
 
 def translate(csv_reader, writer, acct_name, acct_type):
