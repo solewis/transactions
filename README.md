@@ -1,10 +1,25 @@
 ### Instructions
 #### Budget
-1. Export current All Txns tab from goole sheets to imported.csv
-1. Each month grab account transactions since the last transaction and put in the respective .csv file
+1. Download transactions. Grab from a few days prior to last recorded
+    - Capital One (account services -> download transactions)
+    - USAA (download, add headers, delete empty columns)
+    - Marcus (manually type for now)
+    - Amex (choose custom date range, then can download, check box to show extended details)
+    - Chase
+1. Export current All Txns tab from google sheets to imported.csv
 1. Run budget.py
 1. It will output all the new transactions standardized into one file which can be copied to budget tracker in google sheets 
 
+#### Investments
+1. Download transactions
+    - Vanguard Brokerage - Steven
+    - Vanguard Rollover IRA
+    - Vanguard Roth IRA
+    - Vanguard Brokerage - Shared
+      - All vanguard can export as one file to csv
+    - WWT ML Account
+      - Copy from website to excel, format currency (no commas, no dollar sign), delete details column, delete extra rows/columns, export to csv
+1. 
 #### TODO
 1. Figure out Marcus which copies weird (no export option)
 1. Transactions for Investments
