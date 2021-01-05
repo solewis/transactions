@@ -1,13 +1,13 @@
 import csv
 
 import vanguard
-import wwt
+import merrill_lynch
 
 
 def main():
     with open('data/investment/output_pre.csv', mode='w') as output_pre_csv, \
             open('data/investment/vanguard.csv') as vanguard_file, \
-            open('data/investment/wwt.csv') as wwt_file:
+            open('data/investment/merrill_lynch.csv') as wwt_file:
         output_pre_writer = csv.writer(output_pre_csv, delimiter=',')
         vanguard_reader = csv.reader(vanguard_file, delimiter=',')
         wwt_reader = csv.reader(wwt_file, delimiter=',')

@@ -12,13 +12,13 @@
 
 #### Investments
 1. Download transactions
-    - Vanguard Brokerage - Steven
+    - Vanguard Brokerage - Single
     - Vanguard Rollover IRA
     - Vanguard Roth IRA
     - Vanguard Brokerage - Shared
       - All vanguard can export as one file to csv (download button at top right of balances and holdings)
       - Delete account summary information
-    - WWT ML Account
+    - Merrill Lynch
       - Copy from website to excel, format currency (no commas, no dollar sign), delete details column, delete extra rows/columns, export to csv
       - Contribution should become buy for transaction type
       - All contributions should be negative
