@@ -16,9 +16,15 @@
     - Vanguard Rollover IRA
     - Vanguard Roth IRA
     - Vanguard Brokerage - Shared
-      - All vanguard can export as one file to csv
+      - All vanguard can export as one file to csv (download button at top right of balances and holdings)
+      - Delete account summary information
     - WWT ML Account
       - Copy from website to excel, format currency (no commas, no dollar sign), delete details column, delete extra rows/columns, export to csv
+      - Contribution should become buy for transaction type
+      - All contributions should be negative
+      - Dividends should be positive and add a reinvestment that is negative the dividend
+        - Split dividends between all investments
+      - Recordkeeping fee should be split between investments
 1. 
 #### TODO
 1. Figure out Marcus which copies weird (no export option)
