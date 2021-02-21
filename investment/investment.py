@@ -15,7 +15,7 @@ def main():
             ['Settlement Date', 'Trade Date', 'Symbol', 'Name', 'Transaction Type', 'Quantity', 'Price',
              'Commissions and fees', 'Amount', 'Account'])
         vanguard.translate(vanguard_reader, output_pre_writer)
-        wwt.translate(wwt_reader, output_pre_writer)
+        merrill_lynch.translate(wwt_reader, output_pre_writer)
 
     # remove already imported transactions
     imported_keys = set()

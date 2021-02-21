@@ -16,7 +16,7 @@ def translate(csv_reader, writer, acct_name, acct_type):
     for row in csv_reader:
         desc = row[4]
         date = row[0]
-        format_str = '%m/%d/%y'
+        format_str = '%m/%d/%Y'
         date = datetime.datetime.strptime(date, format_str).date()
         amount = row[2]
         if amount.startswith('-'):

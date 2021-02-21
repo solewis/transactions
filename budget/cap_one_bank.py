@@ -8,7 +8,7 @@ category_dict = {
     'Deposit from ALLY': 'Alicia Transfer',
     'Monthly Interest Paid': 'Interest',
     'XCEL ENERGY': 'Utilities',
-
+    'Withdrawal from CAPITAL ONE CRCARDPMT': 'Credit card payment out'
 }
 
 

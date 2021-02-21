@@ -6,6 +6,9 @@
     - Marcus (manually type for now)
     - Amex (choose custom date range, then can download, check box to show extended details)
     - Chase
+    - Notes
+        - Negative is money leaving the account (and credit card purchases), positive is money entering (and credit card payments)
+        - Delete empty lines at end of csv
 1. Export current All Txns tab from google sheets to imported.csv
 1. Run budget.py
 1. It will output all the new transactions standardized into one file which can be copied to budget tracker in google sheets 
