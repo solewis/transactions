@@ -10,8 +10,8 @@
         - Negative is money leaving the account (and credit card purchases), positive is money entering (and credit card payments)
         - Delete empty lines at end of csv
 1. Export current All Txns tab from google sheets to imported.csv
-1. Run budget.py
-1. It will output all the new transactions standardized into one file which can be copied to budget tracker in google sheets 
+1. `python budget/budget.py` 
+1. It will output all the new transactions standardized into one file which can be copied to budget tracker in google sheets
 
 #### Investments
 1. Download transactions
@@ -28,7 +28,7 @@
       - Dividends should be positive and add a reinvestment that is negative the dividend
         - Split dividends between all investments
       - Recordkeeping fee should be split between investments
-1. 
+1. `python investment/investment.py`
 #### TODO
 1. Figure out Marcus which copies weird (no export option)
 1. Transactions for Investments

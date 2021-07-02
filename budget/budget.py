@@ -19,9 +19,6 @@ def main():
         with open('data/budget/savorone.csv') as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
             cap_one_credit_card.translate(csv_reader, writer, 'SavorOne', 'Shared')
-        with open('data/budget/caponestevesavings.csv') as csv_file:
-            csv_reader = csv.reader(csv_file, delimiter=',')
-            cap_one_bank.translate(csv_reader, writer, 'CapOneSavings', 'Steven')
         with open('data/budget/caponesharedsavings.csv') as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
             cap_one_bank.translate(csv_reader, writer, 'CapOne360Savings', 'Shared')
@@ -48,8 +45,6 @@ def main():
         next(reader)
         for row in reader:
             key = toKey(row)
-            if key.startswith('2020-05-01'):
-                print(key + str(len(key)))
             imported_keys.add(key)
     with open('data/budget/output.csv', mode='w') as output_csv:
         writer = csv.writer(output_csv, delimiter=',')
@@ -59,12 +54,7 @@ def main():
             next(reader)
             for row in reader:
                 key = toKey(row)
-                if key.startswith('2020-05-01'):
-                    print(key + str(len(key)))
                 if key not in imported_keys:
-                    if key.startswith('2020-05-01'):
-                        print("Not in imported:")
-                        print(key + str(len(key)))
                     writer.writerow([row[0], row[1], row[2], row[3], row[4], row[5]])
 
 
